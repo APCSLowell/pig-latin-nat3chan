@@ -40,7 +40,7 @@ public int findFirstVowel(String word){
         //postcondition: returns the pig latin equivalent of sWord
         if(findFirstVowel(sWord) > -1){
          if(findFirstVowel(sWord)==0){return sWord.substring(findFirstVowel(sWord),sWord.length())+sWord.substring(0,findFirstVowel(sWord))+"way";}
-         if(sWord.substring(0,2).equals(qu)){return sWord.substring(2,sWord.length())+"quay";}
+         if(sWord.substring(0,2).equals("qu")){return sWord.substring(2,sWord.length())+"quay";}
         return sWord.substring(findFirstVowel(sWord),sWord.length())+sWord.substring(0,findFirstVowel(sWord))+"ay";}
       if(findFirstVowel(sWord) == -1) {
         return sWord + "ay";
